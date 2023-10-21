@@ -10,6 +10,7 @@
 
    <link rel="stylesheet" href="reset.css">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="simplify.css">
    <title>Document</title>
 </head>
 <body>
@@ -21,25 +22,54 @@
                <nav class="menu">
                   <ul class="menu__list">
                      <li>
-                        <a href="" class="menu__link">Первый уровень</a>
+                        <a href="" class="menu__link">Магазины</a>
+                     </li>
+                     <li>
+                        <a class="menu__list">Покупателям</a>
                         <ul class="sub-menu__list">
                            <li>
-                              <a href="" class="sub-menu__link">Второй уровень</a>
+                              <a href="" class="sub-menu__link">Доставка</a>
                            </li>
                            <li>
-                              <a href="" class="sub-menu__link">Второй уровень</a>
+                              <a href="" class="sub-menu__link">Бонусная программа</a>
+                           </li>
+                           <li>
+                              <a href="" class="sub-menu__link">Узнать статус заказа</a>
+                           </li>
+                           <li>
+                              <a href="" class="sub-menu__link">Обмен, возврат, гарантия</a>
+                           </li>
+                           <li>
+                              <a href="" class="sub-menu__link">Кредиты</a>
+                           </li>
+                           <li>
+                              <a href="" class="sub-menu__link">Сервисные центры</a>
                            </li>
                         </ul>
                      </li>
                      <li>
-                        <a class="menu__list">Первый уровень</a>
+                        <a href="" class="menu__link">Юридическим лицам</a>
+                     </li><li>
+                        <a href="" class="menu__link">Клуб FireShop</a>
                      </li>
                   </ul>
                </nav>
                <div class="profile">
-                  <div class="profile__row">
-                     <div class="profile__link">Вход</div>
-                     <div class="profile__link">Регистрация</div>
+                  <div class="menu">
+                     <ul class="menu__list">
+                        <li>
+                           <a href="" class="menu__link">Личный кабинет</a>
+                           <ul class="sub-menu__list w-auto">
+                              <li>
+                                 <a href="" class="sub-menu__link">Вход</a>
+                              </li>
+                              <li>
+                                 <a href="" class="sub-menu__link">Регистрация</a>
+                              </li>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
                   </div>
                </div>
            </div>
@@ -48,24 +78,71 @@
       <main class="main">
          <div class="homepage">
             <div class="homepage__container  container">
-               <div class="homepage__category">
-                  <aside class="category">
-                     <!-- <h2 class="category__title">Категории</h2> -->
-                     <ul class="category__body">
-                        <li class="category__item">Бытовая техника</li>
-                        <li class="category__item">Красота и здоровье</li>
-                        <li class="category__item">Смартфоны и фототехника</li>
-                        <li class="category__item">ТВ, консоли и аудио</li>
-                        <li class="category__item">ПК, ноутбуки, переферия</li>
-                        <li class="category__item">Комплектующие для ПК</li>
-                        <li class="category__item">Офис и мебель</li>
-                     </ul>
-                  </aside>
-               </div>
-               <div class="homepage__content">
-                  <div class="homepage__cards">
-                     
+               <div class="homepage__top-grid">
+                  <div class="homepage__category">
+                     <aside class="category">
+                        <!-- <h2 class="category__title">Категории</h2> -->
+                        <ul class="category__body">
+                           <li class="category__item">Бытовая техника</li>
+                           <li class="category__item">Красота и здоровье</li>
+                           <li class="category__item">Смартфоны и фототехника</li>
+                           <li class="category__item">ТВ, консоли и аудио</li>
+                           <li class="category__item">ПК, ноутбуки, переферия</li>
+                           <li class="category__item">Комплектующие для ПК</li>
+                           <li class="category__item">Офис и мебель</li>
+                        </ul>
+                     </aside>
                   </div>
+                  <div class="homepage__content">
+                     <div class="homepage__cards">
+                        
+                     </div>
+
+                     <div class="homepage__offers">
+                        <div class="offer">
+                           <div class="offer__title">Умный дом</div>
+                           <div class="offer__body">
+                              <a href="" class="offer__img-frame">
+                                 <img src="img/offers/brillianthome.jpg" alt="" class="offer__img">
+                              </a>
+                              <div class="offer__category">
+                                 <a href="" class="offer__link">Комплекты умного дома</a>
+                                 <a href="" class="offer__link">Центры управления умным домом</a>
+                                 <a href="" class="offer__link">Умные розетки</a>
+                                 <a href="" class="offer__link">Умные сетевые фильтры</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="offer">
+                           <div class="offer__title">Кофейня у вас дома</div>
+                           <div class="offer__body">
+                              <a href="" class="offer__img-frame">
+                                 <img src="img/offers/coffe.jpg" alt="" class="offer__img">
+                              </a>
+                              <div class="offer__category">
+                                 <a href="" class="offer__link">Кофемашины автоматические</a>
+                                 <a href="" class="offer__link">Кофеварки капельные</a>
+                                 <a href="" class="offer__link">Гейзерные кофеварки</a>
+                                 <a href="" class="offer__link">Кофеварки рожковые</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="offer">
+                           <div class="offer__title">Порядок в саду</div>
+                           <div class="offer__body">
+                              <a href="" class="offer__img-frame">
+                                 <img src="img/offers/garden.jpg" alt="" class="offer__img">
+                              </a>
+                              <div class="offer__category">
+                                 <a href="" class="offer__link">Сабельные пилы</a>
+                                 <a href="" class="offer__link">Электрические пилы</a>
+                                 <a href="" class="offer__link">Грабли</a>
+                                 <a href="" class="offer__link">Бензиновые пилы</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                   </div>
                   <div class="homepage__brands">
                      <div class="brands">
                         <a href="" class="brand-card__link">
