@@ -4,6 +4,8 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+   <link rel="shortcut icon" href="img/logo/logo.png" type="image/png">
+
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
@@ -11,7 +13,8 @@
    <link rel="stylesheet" href="reset.css">
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="simplify.css">
-   <title>Document</title>
+   <link rel="stylesheet" href="adaptive.css">
+   <title>Fireshop</title>
 </head>
 <body>
    <div class="wrapper">
@@ -76,12 +79,11 @@
          </div>
       </header>
       <main class="main">
-         <div class="homepage">
+         <section class="homepage">
             <div class="homepage__container  container">
                <div class="homepage__top-grid">
                   <div class="homepage__category">
                      <aside class="category">
-                        <!-- <h2 class="category__title">Категории</h2> -->
                         <ul class="category__body">
                            <li class="category__item">Бытовая техника</li>
                            <li class="category__item">Красота и здоровье</li>
@@ -95,7 +97,34 @@
                   </div>
                   <div class="homepage__content">
                      <div class="homepage__cards">
-                        
+                        <div class="homepage__card-container_wide">
+                           <div class="card wide-card">
+                              <div class="card__title">Личный кабинет</div>
+                              <div class="card__text">Получайте бонусы, отслеживайте заказы и делитесь мнением</div>
+                              <div class="card__button-container">
+                                 <button class="card__button">Вход</button>
+                                 <button class="card__button">Мои заказы</button>
+                              </div>
+                              <img src="img/cards/homepage/discont.png" alt="" id="profile-card-background">
+                           </div>
+                        </div>
+                        <div class="homepage__card-container">
+                           <div class="card">
+                              <div class="card__title">Акции</div>
+                              <div class="card__text">Скидки, рассрочки, выгодные комплекты</div>
+                              
+                           </div>
+                           <div class="card">
+                              <div class="card__title">Собрать ПК</div>
+                              <div class="card__text">Без проблем с совместимостью</div>
+                              
+                           </div>
+                           <div class="card">
+                              <div class="card__title">Подарочные карты</div>
+                              <div class="card__text">Дарите любимым</div>
+                              
+                           </div>
+                        </div>
                      </div>
 
                      <div class="homepage__offers">
@@ -164,7 +193,7 @@
                   </div>
                </div>
             </div>
-         </div>
+         </section>
          
       </main>
       <footer class="footer">
