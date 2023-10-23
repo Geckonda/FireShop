@@ -80,9 +80,12 @@ a:hover{
 .sub-menu__list>li{
    background-color: var(--main-dark);
    padding: 10px;
+   border-left: 2px solid var(--hovered);
+   border-right: 2px solid var(--hovered);
 }
 .sub-menu__list>li:last-child{
    border-radius: 0 0 var(--radius) var(--radius);
+   border-bottom: 2px solid var(--hovered);
 }
 .sub-menu__link {
 }
@@ -262,23 +265,27 @@ a:hover{
    display: flex;
    flex-direction: column;
    justify-content: space-around;
-   padding: 15px;
+   padding: 15px 15px 15px 30px;
 }
 .category__item {
    font-size: var(--medium);
    cursor: pointer;
    position: relative;
    line-height: 2rem;
+   font-size: 16px;
 }
 .category__item::before{
    content: '';
    margin-right: 8px;
-   display: inline-block;
+   display: block;
    width: 12px;
    height: 10px;
    background-color: var(--hovered);
    clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
-   /* transform: translate(25%, 25%); */
+   position: absolute;
+   left: -15px;
+   top:50%;
+   transform: translate(-50%, -50%);
 }
 .category__item:hover{
    color: var(--hovered);

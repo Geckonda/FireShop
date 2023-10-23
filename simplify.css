@@ -8,5 +8,13 @@
   right: 0;
   z-index: 1;
   opacity: 70%;
-
+ }
+ .homepage__card-background{
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  z-index: 1;
+  opacity: 70%;
  }
