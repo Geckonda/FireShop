@@ -2,6 +2,11 @@
     .homepage__top-grid{
         width: 100%;
         grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+            "category cards"
+            "offers offers"
+            "brands brands";
+        gap:30px;
     }
 
     .category{
@@ -12,11 +17,13 @@
         font-size: 14px;
     }
     .homepage__cards{
-        /* grid-template-rows: repeat(auto-fill, 1fr); */
         grid-template-columns: unset;
         grid-template-areas:
         "profile"
         "cards";
+        margin: unset;
+        align-items: stretch;
+        align-content: space-between;
     }
     .homepage__card-container_wide{
         grid-area: profile;
@@ -24,16 +31,27 @@
     .homepage__card-container{
         grid-area: cards;
     }
+    .homepage__card-background{
+        width: 110px;
+        height: 110px;
+    }
     .card{
-        height: 145px;
+        height: 200px;
+    }
+    .card__text{
+        font-size: 18px;
     }
     .homepage__offers{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
         gap: 25px;
+        margin: unset;
     }
     .brands{
         flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-evenly;
     }
     .brand-card__link{
         width: 75px;
@@ -49,11 +67,13 @@
     .menu__link{
         font-size: 15px;
     }
+   
     .homepage__top-grid{
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: auto auto;
         grid-template-areas:
-            "category content";
+            "category cards"
+            "offers offers"
+            "brands brands";
     }
     .category__item{
         font-size: 13px;
@@ -62,7 +82,17 @@
         grid-template-columns: 1fr 1fr;
     }
     .brands{
-        display: none;
+        
+    }
+    .homepage__card-background{
+        width: 90px;
+        height: 90px;
+    }
+    .card{
+        height: 140px;
+    }
+    .card__text{
+        font-size: 14px;
     }
     .wide-card{
         height: 120px;
@@ -70,12 +100,29 @@
     .card__text{
         max-width: 250px;
     }
-    /* .offer:nth-child(2n+1) .offer__body{
-        flex-direction: row-reverse;
+    .homepage__offers{
+        
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
+}
+@media(max-width:760px){
     
-    .offer:nth-child(2n+1) .offer__title{
-        text-align: end;
-    } */
-    
+    .menu{
+        display: none;
+    }
+    .homepage__top-grid{
+        grid-template-areas:
+            "cards cards"
+            "offers offers"
+            "brands brands";
+    }
+    .homepage__category{
+        display: none;
+    }
+}
+@media(max-width:450px){
+    #profile-card-background{
+        width: 140px;
+        height: 90px;
+    }
 }

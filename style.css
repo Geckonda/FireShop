@@ -108,8 +108,8 @@ a:hover{
     grid-template-rows: auto auto auto;
     grid-column-gap: 20px;
     grid-template-areas:
-        "category content"
-        "category brands"
+        "category cards"
+        "category offers"
         "category brands";
 }
 .homepage__category{
@@ -120,6 +120,7 @@ a:hover{
    grid-area: content;
 }
 .homepage__cards {
+   grid-area: cards;
    display: grid;
    grid-template-columns: 1.5fr 3fr;
    gap: 20px;
@@ -137,6 +138,7 @@ a:hover{
 }
 
 .card {
+   display: block;
    height: 175px;
    background: var(--main-dark);
    color: var(--main-light);
@@ -177,6 +179,7 @@ a:hover{
 }
 
 .homepage__offers {
+   grid-area: offers;
    width: 100%;
    display: flex;
    justify-content: space-between;
@@ -292,8 +295,8 @@ a:hover{
 }
 .footer {
    width: 100%;
-   background-color: var(--main-dark);
+   /* background-color: var(--main-dark); */
 }
 .footer__row{
-   height: 80px;
+   /* height: 90px; */
 }
